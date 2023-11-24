@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPARACIONES ZK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/logo.jpeg.png" type="image/x-icon">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cabeza">
+            <img src="media/logo.jpeg.png" class="logo">
+            <h1>REPARACIONES ZK</h1>
+            <p>Reparación de computadoras: Soluciones prácticas para tus problemas informáticos<br>a un precio justo.</p>
+        </div>
+
+        <div class="cuerpo">
+            <div class="cajas-container">
+                <div class="caja caja1" id="office">
+                    <h2><b>Instalación de Office</b></h2>
+                    <img src="media/of.png" class="img">
+                    <button onclick="mostrarVentana('Detalles de Office', 'Instalación de Office')">MÁS DETALLES</button>
+                </div>
+                
+                <div class="caja caja2">
+                    <h2><b>Restauración del Sistema</b></h2>
+                    <img src="media/rest.jpeg" class="img">
+                    <button onclick="mostrarVentana('Detalles de Restauración', 'Restauración del Sistema')">MÁS DETALLES</button>
+                </div>
+                
+                <div class="caja caja3">
+                    <h2><b>Instalación de Sistema</b></h2>
+                    <img src="media/win.png" class="img">
+                    <button onclick="mostrarVentana('Detalles de Instalación de Sistema', 'Instalación de Sistema')">MÁS DETALLES</button>
+                </div>
+            </div>
+            
+            <div id="ventanaEmergente" class="ventana-emergente">
+                <div class="contenido-ventana">
+                    <span class="cerrar" onclick="cerrarVentana()">&times;</span>
+                    <p id="detalles"></p>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="contacto">
+        <img src="media/w.webp" alt="Icono de WhatsApp" class="ico">
+        <p><b>Contacto por WhatsApp:</b> +593 991186293</p>
+    </div>
+    
+    <div class="contacto">
+        <img src="media/c.png" alt="Icono de Correo Electrónico" class="ico2">
+        <p><b>Correo Electrónico:</b> playzeta89@gmail.com</p>
+    </div>
+</div>
+</footer>
+</html>

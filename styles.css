@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+    margin: 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabeza {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h1, p {
+    margin: 10px 0;
+}
+
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cajas-container {
+    display: flex;
+    flex-direction: row; /* Por defecto es row, pero es bueno especificarlo */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caja1, .caja2, .caja3 {
+    background-color: #555; /* Color de fondo más oscuro para las cajas */
+    padding: 20px;
+    margin: 10px; /* Reducido el margen */
+    border-radius: 10px;
+    text-align: center;
+    width: calc(25.25% - 20px); /* Calcula el ancho para que estén una al lado de la otra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra de la caja */
+    transition: transform 0.3s ease-in-out;
+}
+
+.caja1:hover, .caja2:hover, .caja3:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
+
+
+.img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+.js {
+    color: black;
+}
+
+.ventana-emergente {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contenido-ventana {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.sugerencia {
+    background-color: #555;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+}
+
+input, textarea, button {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+.contacto {
+    display: flex;
+    align-items: center;
+}
+
+.ico, .ico2 {
+    width: 50px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Ajusta el margen entre el icono y el texto */
+}
+
+@media screen and (max-width: 600px) {
+    .caja1, .caja2, .caja3 {
+        width: 80%; /* En dispositivos móviles, las cajas ocupan el 100% del ancho */
+        margin: 25px;
+    }
+}
