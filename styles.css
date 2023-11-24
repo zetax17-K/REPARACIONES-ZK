@@ -135,10 +135,20 @@ input, textarea, button {
     align-items: center;
 }
 
-.ico, .ico2 {
-    width: 50px; /* Ajusta el tamaño según sea necesario */
+.ico {
+    width: 70px; /* Ajusta el tamaño según sea necesario */
     height: auto;
     margin-right: 10px; /* Ajusta el margen entre el icono y el texto */
+}
+.ico2 {
+    width: 40px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    margin-right: 10px; /* Ajusta el margen entre el icono y el texto */
+}
+
+.des {
+    text-align: left;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 600px) {
