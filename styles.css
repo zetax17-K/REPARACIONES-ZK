@@ -156,4 +156,7 @@ input, textarea, button {
         width: 80%; /* En dispositivos móviles, las cajas ocupan el 100% del ancho */
         margin: 25px;
     }
+    .des {
+    text-align: left;
+}
 }
