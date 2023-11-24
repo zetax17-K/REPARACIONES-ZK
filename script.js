@@ -10,13 +10,13 @@ function mostrarVentana(detalles, servicio) {
     switch (servicio) {
         case 'Instalación de Office':
             detallesHTML += `
-                <p>Instalación, configuración y activación de Office licencia permanente.<br><br>Precio: $20</p>
+                <p>Instalación, configuración y activación de Office licencia permanente.<br><br>Precio: $15</p>
                 `;
             break;
 
         case 'Restauración del Sistema':
             detallesHTML += `
-                <p>Restauración del sistema operativo.<br>Si el sistema muestra fallos se puede restaurar con poco riesgo de perdida de documento.<br><br>Precio: $20</p>
+                <p>Restauración del sistema operativo.<br>Si el sistema muestra fallos se puede restaurar con un bajo riesgo de perdida de documento.<br><br>Precio: $20</p>
                 `;
             break;
 
