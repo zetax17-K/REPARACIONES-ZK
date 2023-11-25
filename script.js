@@ -16,13 +16,13 @@ function mostrarVentana(detalles, servicio) {
 
         case 'Restauración del Sistema':
             detallesHTML += `
-                <p>Restauración del sistema operativo.<br>Si el sistema muestra fallos se puede restaurar con un bajo riesgo de perdida de documento.<br><br>Precio: $20</p>
+                <p>Restauración del sistema operativo.<br>Si el sistema muestra fallos se puede restaurar con un bajo riesgo de perdida de documento.<br><br>Precio: $15</p>
                 `;
             break;
 
         case 'Instalación de Sistema':
             detallesHTML += `
-                <p>Instalación del sistema operativo desde cero con la licencia activada.<br><br>Precio: $25</p>
+                <p>Instalación del sistema operativo desde cero con la licencia activada.<br><br>Precio: $20</p>
                 `;
             break;
 
